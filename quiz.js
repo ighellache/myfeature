@@ -9,7 +9,10 @@ var images = {
     "wallaby" : "wallaby.jpg"
     }
 
-var bleep = new Audio('/Sounds/owl.mp3');
+import sound from '/Sounds/owl.mp3'
+const audio = new Audio(sound)
+audio.play()
+//var bleep = new Audio('/Sounds/owl.mp3');
 
    var bleep2 = new Audio('/Sounds/bantam.mp3');
 
