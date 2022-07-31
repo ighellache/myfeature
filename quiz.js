@@ -50,6 +50,21 @@ function showProgress() {
     else if (currentQuestionNumber == 2){
         element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/bantam.mp3"></audio>'
     }
+    else if (currentQuestionNumber == 3){
+        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/coati.mp3"></audio>'
+    }
+    else if (currentQuestionNumber == 4){
+         element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/kookaburra.mp3"></audio>'
+     }
+    else if (currentQuestionNumber == 5){
+        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/pheasant.mp3"></audio>'
+     }
+    else if (currentQuestionNumber == 6){
+        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/ibis.mp3"></audio>'
+    }
+    else if (currentQuestionNumber == 7){
+        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/wallaby.mp3"></audio>'
+    }
     };
 
 function showScores() {
@@ -78,63 +93,6 @@ function showScores() {
     new Question("Find the Ibis", ["egret", "ibis", "kookaburra", "coati"], "ibis"),
     new Question("Which is a wallaby?", ["kookaburra", "coati", "egret", "wallaby"], "wallaby")
     ];
-
-   // sounds = [new Audio("owl.mp3"), new Audio("bantam.mp3"), new Audio("coati.mp3"), new Audio("kookaburra.mp3"), new Audio("pheasant.mp3"), new Audio("ibis.mp3"), new Audio("wallaby.mp3")]
-//    var bleep = new Audio('/Sounds/owl.mp3');
-
-//     var bleep2 = new Audio('/Sounds/bantam.mp3');
-
-//    var bleep3 = new Audio('/Sounds/coati.mp3');
-
-//     var bleep4 = new Audio('/Sounds/kookaburra.mp3');
-
-//     var bleep5 = new Audio('/Sounds/pheasant.mp3');
-
-//     var bleep6 = new Audio('/Sounds/ibis.mp3');
-
-//     var bleep7 = new Audio('/Sounds/wallaby.mp3');
-
-//     var lose = new Audio('/Sounds/low.mp3');
-
-//     var med = new Audio('/Sounds/med.mp3');
-
-//     var win = new Audio('/Sounds/win.mp3');
-
-// var countClick = 0;
-// function animal() {
-//     countClick++;
-//     if (countClick == 1){
-//         bleep.play()
-        
-//     }
-//     else if (countClick == 2){
-//         bleep.pause();
-//         bleep2.play();
-//     }
-//     else if (countClick == 3){
-//         bleep2.pause();
-//         bleep3.play();
-//     }
-//     else if (countClick == 4){
-//         bleep3.pause();
-//         bleep4.play();
-//     }
-//     else if (countClick == 5){
-//         bleep4.pause();
-//         bleep5.play();
-//     }
-//     else if (countClick == 6){
-//         bleep5.pause();
-//         bleep6.play();
-//     }
-//     else if (countClick == 7){
-//         bleep6.pause();
-//         bleep7.play();
-//     }
-//     else {
-//         bleep7.pause();
-//     }
-// }
 
 function Question(text, choices, answer) {
     this.text = text;
@@ -176,3 +134,5 @@ function Quiz(questions) {
 
     // display quiz
     populate();
+
+    
