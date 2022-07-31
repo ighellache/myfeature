@@ -45,25 +45,25 @@ function showProgress() {
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
     if (currentQuestionNumber == 1){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/owl.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/owl.mp3"></audio>' + '<p id="progress">Question x of y</p>';
     }
     else if (currentQuestionNumber == 2){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/bantam.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/bantam.mp3"></audio>' + '<p id="progress">Question x of y</p>';
     }
     else if (currentQuestionNumber == 3){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/coati.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/coati.mp3"></audio>' + '<p id="progress">Question x of y</p>';
     }
     else if (currentQuestionNumber == 4){
-         element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/kookaburra.mp3"></audio>'
+         element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/kookaburra.mp3"></audio>' + '<p id="progress">Question x of y</p>';
      }
     else if (currentQuestionNumber == 5){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/pheasant.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/pheasant.mp3"></audio>' + '<p id="progress">Question x of y</p>';
      }
     else if (currentQuestionNumber == 6){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/ibis.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/ibis.mp3"></audio>' + '<p id="progress">Question x of y</p>';
     }
     else if (currentQuestionNumber == 7){
-        element.innerHTML = '<audio controls play class="mysound"><source src="Sounds/wallaby.mp3"></audio>'
+        element.innerHTML = '<h3 class="bottomtext">Play for a sound clue!</h3>' + '<audio controls play class="mysound"><source src="Sounds/wallaby.mp3"></audio>' + '<p id="progress">Question x of y</p>';
     }
     };
 
