@@ -9,6 +9,26 @@ var images = {
     "wallaby" : "wallaby.jpg"
     }
 
+var bleep = new Audio('/Sounds/owl.mp3');
+
+   var bleep2 = new Audio('/Sounds/bantam.mp3');
+
+   var bleep3 = new Audio('/Sounds/coati.mp3');
+
+   var bleep4 = new Audio('/Sounds/kookaburra.mp3');
+
+   var bleep5 = new Audio('/Sounds/pheasant.mp3');
+
+   var bleep6 = new Audio('/Sounds/ibis.mp3');
+
+   var bleep7 = new Audio('/Sounds/wallaby.mp3');
+
+   var lose = new Audio('/Sounds/low.mp3');
+
+   var med = new Audio('/Sounds/med.mp3');
+
+   var win = new Audio('/Sounds/win.mp3');
+
 document.getElementById("question").style.fontFamily = "Aclonica";
 document.getElementById('question').style.fontSize = '25px';
 
@@ -78,25 +98,6 @@ function showScores() {
     ];
 
    // sounds = [new Audio("owl.mp3"), new Audio("bantam.mp3"), new Audio("coati.mp3"), new Audio("kookaburra.mp3"), new Audio("pheasant.mp3"), new Audio("ibis.mp3"), new Audio("wallaby.mp3")]
-   var bleep = new Audio('/Sounds/owl.mp3');
-
-   var bleep2 = new Audio('/Sounds/bantam.mp3');
-
-   var bleep3 = new Audio('/Sounds/coati.mp3');
-
-   var bleep4 = new Audio('/Sounds/kookaburra.mp3');
-
-   var bleep5 = new Audio('/Sounds/pheasant.mp3');
-
-   var bleep6 = new Audio('/Sounds/ibis.mp3');
-
-   var bleep7 = new Audio('/Sounds/wallaby.mp3');
-
-   var lose = new Audio('/Sounds/low.mp3');
-
-   var med = new Audio('/Sounds/med.mp3');
-
-   var win = new Audio('/Sounds/win.mp3');
 
 var countClick = 0;
 function animal() {
