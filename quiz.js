@@ -9,29 +9,6 @@ var images = {
     "wallaby" : "wallaby.jpg"
     }
 
-//import sound from '/Sounds/owl.mp3'
-//const audio = new Audio(sound)
-//audio.play()
-   var bleep = new Audio('Sounds/owl.mp3');
-
-   var bleep2 = new Audio('Sounds/bantam.mp3');
-
-   var bleep3 = new Audio('Sounds/coati.mp3');
-
-   var bleep4 = new Audio('Sounds/kookaburra.mp3');
-
-   var bleep5 = new Audio('Sounds/pheasant.mp3');
-
-   var bleep6 = new Audio('Sounds/ibis.mp3');
-
-   var bleep7 = new Audio('Sounds/wallaby.mp3');
-
-   var lose = new Audio('Sounds/low.mp3');
-
-   var med = new Audio('/Sounds/med.mp3');
-
-   var win = new Audio('Sounds/win.mp3');
-
 document.getElementById("question").style.fontFamily = "Aclonica";
 document.getElementById('question').style.fontSize = '25px';
 
@@ -76,15 +53,15 @@ function showScores() {
         element.innerHTML = gameOverHTML;
         bleep7.pause();
     if (quiz.score <= 3){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<img id="animalgif" src="/gifs/chickengif.gif">' +" You should visit the zoo to learn more!";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/dDhTr3D2Cwg5G" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chicken-pants-dDhTr3D2Cwg5G"></a></p>' +" You should visit the zoo to learn more!";
         lose.play();
     }
     else if (quiz.score <= 5){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<img id="animalgif"src="/gifs/owlgif.gif">' +" That was pretty impressive...";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/kewCD3ucGAwak" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/great-horned-owl-kewCD3ucGAwak"></a></p>' +" That was pretty impressive...";
         med.play();
     }
     else if (quiz.score == 7){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<img id="animalgif" src="/gifs/lemurgif.gif">' +" Wow! You got them all!";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/SYQpUZhABtgaIaUr60" width="400" height="450"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pbsnature-SYQpUZhABtgaIaUr60"></a></p>' +" Wow! You got them all!";
         win.play();
     }
     };
@@ -101,12 +78,31 @@ function showScores() {
     ];
 
    // sounds = [new Audio("owl.mp3"), new Audio("bantam.mp3"), new Audio("coati.mp3"), new Audio("kookaburra.mp3"), new Audio("pheasant.mp3"), new Audio("ibis.mp3"), new Audio("wallaby.mp3")]
+   var bleep = new Audio('/Sounds/owl.mp3');
+
+   var bleep2 = new Audio('/Sounds/bantam.mp3');
+
+   var bleep3 = new Audio('/Sounds/coati.mp3');
+
+   var bleep4 = new Audio('/Sounds/kookaburra.mp3');
+
+   var bleep5 = new Audio('/Sounds/pheasant.mp3');
+
+   var bleep6 = new Audio('/Sounds/ibis.mp3');
+
+   var bleep7 = new Audio('/Sounds/wallaby.mp3');
+
+   var lose = new Audio('/Sounds/low.mp3');
+
+   var med = new Audio('/Sounds/med.mp3');
+
+   var win = new Audio('/Sounds/win.mp3');
 
 var countClick = 0;
 function animal() {
     countClick++;
     if (countClick == 1){
-        bleep.play();
+       // bleep.play();
     }
     else if (countClick == 2){
         bleep.pause();
