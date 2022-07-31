@@ -71,17 +71,17 @@ function showScores() {
          gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
         element.innerHTML = gameOverHTML;
-        element.innerHTML = '<button class="btn" type="button">Play again</button>'
     if (quiz.score <= 3){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/dDhTr3D2Cwg5G" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chicken-pants-dDhTr3D2Cwg5G"></a></p>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/low.mp3"></audio>' + " You should visit the zoo to learn more!";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/dDhTr3D2Cwg5G" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/chicken-pants-dDhTr3D2Cwg5G"></a>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/low.mp3"></audio>' + " You should visit the zoo to learn more!   " + '<button class="mybtn"><a href="/index.html">Play again</a></button>';
     }
     else if (quiz.score <= 5){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/kewCD3ucGAwak" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/great-horned-owl-kewCD3ucGAwak"></a></p>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/med.mp3"></audio>' + " That was pretty impressive...";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/kewCD3ucGAwak" width="400" height="450" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/great-horned-owl-kewCD3ucGAwak"></a>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/med.mp3"></audio>' + " That was pretty impressive...  "  + '<button class="mybtn"><a href="/index.html">Play again</a></button>';
     }
     else if (quiz.score == 7){
-        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/SYQpUZhABtgaIaUr60" width="400" height="450"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pbsnature-SYQpUZhABtgaIaUr60"></a></p>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/win.mp3"></audio>' + " Wow! You got them all!";
+        element.innerHTML = "<h1>Result</h1>" + "<h2 id='score'> Your scores: " + quiz.score + "</h2>" + '<iframe src="https://giphy.com/embed/SYQpUZhABtgaIaUr60" width="400" height="450"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/pbsnature-SYQpUZhABtgaIaUr60"></a>' + '<audio controls autoplay hidden class="mysound"><source src="Sounds/win.mp3"></audio>' + " Wow! You got them all!   " + '<button class="mybtn"><a href="/index.html">Play again</a></button>';
     }
     };
+
 
     // create questions
     var questions = [
