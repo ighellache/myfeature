@@ -9,28 +9,28 @@ var images = {
     "wallaby" : "wallaby.jpg"
     }
 
-import sound from '/Sounds/owl.mp3'
-const audio = new Audio(sound)
-audio.play()
-//var bleep = new Audio('/Sounds/owl.mp3');
+//import sound from '/Sounds/owl.mp3'
+//const audio = new Audio(sound)
+//audio.play()
+   var bleep = new Audio('Sounds/owl.mp3');
 
-   var bleep2 = new Audio('/Sounds/bantam.mp3');
+   var bleep2 = new Audio('Sounds/bantam.mp3');
 
-   var bleep3 = new Audio('/Sounds/coati.mp3');
+   var bleep3 = new Audio('Sounds/coati.mp3');
 
-   var bleep4 = new Audio('/Sounds/kookaburra.mp3');
+   var bleep4 = new Audio('Sounds/kookaburra.mp3');
 
-   var bleep5 = new Audio('/Sounds/pheasant.mp3');
+   var bleep5 = new Audio('Sounds/pheasant.mp3');
 
-   var bleep6 = new Audio('/Sounds/ibis.mp3');
+   var bleep6 = new Audio('Sounds/ibis.mp3');
 
-   var bleep7 = new Audio('/Sounds/wallaby.mp3');
+   var bleep7 = new Audio('Sounds/wallaby.mp3');
 
-   var lose = new Audio('/Sounds/low.mp3');
+   var lose = new Audio('Sounds/low.mp3');
 
    var med = new Audio('/Sounds/med.mp3');
 
-   var win = new Audio('/Sounds/win.mp3');
+   var win = new Audio('Sounds/win.mp3');
 
 document.getElementById("question").style.fontFamily = "Aclonica";
 document.getElementById('question').style.fontSize = '25px';
